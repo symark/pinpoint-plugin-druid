@@ -1,4 +1,4 @@
-# Pinpoint Profiler Plugin Sample
+# Pinpoint Profiler Plugin Duird
 
 You can extend Pinoint's profiling ability by writing a Pinpoint profiler plugin. This duird project shows how to write it. It consists of 3 modules:
 
