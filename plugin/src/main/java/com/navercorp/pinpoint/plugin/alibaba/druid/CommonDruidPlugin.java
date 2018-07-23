@@ -46,7 +46,7 @@ public class CommonDruidPlugin implements ProfilerPlugin, TransformTemplateAware
     public void setup(ProfilerPluginSetupContext context) {
         config = new CommonsDruidConfig(context.getConfig());
         if (!config.isPluginEnable()) {
-            logger.info("Disable commons dbcp option. 'profiler.jdbc.dbcp2=false'");
+            logger.info("Disable alibaba druid option. 'profiler.jdbc.druid=false'");
             return;
         }
         addBasicDataSourceTransformer();
