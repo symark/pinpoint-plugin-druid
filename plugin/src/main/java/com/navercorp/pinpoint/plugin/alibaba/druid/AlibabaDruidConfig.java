@@ -21,7 +21,7 @@ import com.navercorp.pinpoint.bootstrap.config.ProfilerConfig;
 /**
  * @author Taejin Koo
  */
-public class CommonsDruidConfig {
+public class AlibabaDruidConfig {
 
     static final String DRUID_PLUGIN_ENABLE = "profiler.jdbc.druid";
     static final String DRUID_PROFILE_CONNECTIONCLOSE_ENABLE = "profiler.jdbc.druid.connectionclose";
@@ -29,7 +29,7 @@ public class CommonsDruidConfig {
     private final boolean pluginEnable;
     private final boolean profileClose;
 
-    public CommonsDruidConfig(ProfilerConfig config) {
+    public AlibabaDruidConfig(ProfilerConfig config) {
         pluginEnable = config.readBoolean(DRUID_PLUGIN_ENABLE, false);
         profileClose = config.readBoolean(DRUID_PROFILE_CONNECTIONCLOSE_ENABLE, false);
     }

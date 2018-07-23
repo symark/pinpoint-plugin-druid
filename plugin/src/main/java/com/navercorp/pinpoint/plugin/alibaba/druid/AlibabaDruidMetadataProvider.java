@@ -19,7 +19,7 @@ package com.navercorp.pinpoint.plugin.alibaba.druid;
 import com.navercorp.pinpoint.common.trace.TraceMetadataProvider;
 import com.navercorp.pinpoint.common.trace.TraceMetadataSetupContext;
 
-public class CommonsDruidMetadataProvider implements TraceMetadataProvider {
+public class AlibabaDruidMetadataProvider implements TraceMetadataProvider {
     @Override
     public void setup(TraceMetadataSetupContext context) {
         context.addServiceType(AlibabaDruidConstants.SERVICE_TYPE);

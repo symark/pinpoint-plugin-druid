@@ -31,11 +31,11 @@ import com.navercorp.pinpoint.bootstrap.plugin.util.InstrumentUtils;
 
 import java.security.ProtectionDomain;
 
-public class CommonDruidPlugin implements ProfilerPlugin, TransformTemplateAware {
+public class AlibabaDruidPlugin implements ProfilerPlugin, TransformTemplateAware {
 
     private final PLogger logger = PLoggerFactory.getLogger(this.getClass());
     private TransformTemplate transformTemplate;
-    private CommonsDruidConfig config;
+    private AlibabaDruidConfig config;
 
     @Override
     public void setTransformTemplate(TransformTemplate transformTemplate) {
@@ -44,7 +44,7 @@ public class CommonDruidPlugin implements ProfilerPlugin, TransformTemplateAware
 
     @Override
     public void setup(ProfilerPluginSetupContext context) {
-        config = new CommonsDruidConfig(context.getConfig());
+        config = new AlibabaDruidConfig(context.getConfig());
         if (!config.isPluginEnable()) {
             logger.info("Disable alibaba druid option. 'profiler.jdbc.druid=false'");
             return;
