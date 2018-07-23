@@ -1,10 +1,10 @@
 # Pinpoint Profiler Plugin Sample
 
-You can extend Pinoint's profiling ability by writing a Pinpoint profiler plugin. This sample project shows how to write it. It consists of 3 modules:
+You can extend Pinoint's profiling ability by writing a Pinpoint profiler plugin. This duird project shows how to write it. It consists of 3 modules:
 
-* plugin-sample-target: target library
-* plugin-sample-plugin: sample plugin
-* plugin-sample-agent: agent distribution with sample plugin
+* plugin-duird-target: target library
+* plugin-duird-plugin: duird plugin
+* plugin-duird-agent: agent distribution with duird plugin
 
 
 # Implementing a Profiler Plugin
